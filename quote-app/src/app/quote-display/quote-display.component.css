@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.quote-container:hover {
+    transform: scale(1.01);
+}
+
+.quote-text {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+    color: #111; /* darker color for better contrast */
+    margin-bottom: 30px;
+    font-family: "Georgia", serif;
+    transition: color 0.2s; /* smooth color transition */
+}
+
+.quote-text:hover {
+    color: #fc4a1a; /* same color as the gradient in the body */
+}
+
+.quote-author {
+    font-size: 22px;
+    text-align: right;
+    color: #333; /* darker color for better contrast */
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    transition: color 0.2s; /* smooth color transition */
+}
+
+.quote-author:hover {
+    color: #fc4a1a; /* same color as the gradient in the body */
+}
+
+.new-quote-button {
+    padding: 15px 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f9b0f; /* a fresh green */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-family: "Arial", sans-serif;
+}
+
+.new-quote-button:hover {
+    background-color: #f44336; /* turns red on hover */
+    transform: scale(1.05);
+}
