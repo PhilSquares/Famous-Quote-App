@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ export class QuoteService {
 
   httpOptions = {
     headers: new HttpHeaders({
-      "X-RapidAPI-Key": "f5f95ea9a4mshecae1d21cd25a43p1d9efcjsnaf659bae2885",
-      "X-RapidAPI-Host": "andruxnet-random-famous-quotes.p.rapidapi.com"
+      "X-RapidAPI-Key": environment.apiKey,
+      "X-RapidAPI-Host": environment.apiHost
     }),
     params: new HttpParams().set('cat', 'movies').set('count', '1')
   };
